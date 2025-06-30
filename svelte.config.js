@@ -1,18 +1,14 @@
+// svelte.config.js
 import vercel from '@sveltejs/adapter-vercel';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
-	// for more information about preprocessors
-	preprocess: vitePreprocess(),
-
-	kit: {
-		// Use the Vercel adapter and specify Node 18 runtime
-		adapter: vercel({
-			runtime: 'nodejs18.x'
-		})
-	}
+  preprocess: vitePreprocess(),
+  kit: {
+    adapter: vercel()
+  }
 };
 
 export default config;
+
