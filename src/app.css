@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	font-family: 'Urbanist Variable', sans-serif;
+	color: #eeeeee;
+}
+
+/* Globální rezervu pro kotvy pod sticky navbar */
+html {
+  /* uprav podle skutečné výšky vaší lišty, např. 6rem = 96px */
+  scroll-padding-top: 6rem;
+}
