@@ -48,7 +48,7 @@
 
 			<!-- Mobile Nav -->
 			<ul
-				class={`fixed inset-0 z-[9999] flex flex-col items-end gap-4 bg-white pr-4 pt-14 shadow-xl transition-transform duration-300 ease-in-out md:hidden ${open ? 'translate-x-0' : 'translate-x-[100%]'}`}
+				class={`fixed inset-0 z-[9999] flex flex-col items-end gap-4 bg-slate-50 pr-4 pt-14 shadow-xl transition-transform duration-300 ease-in-out md:hidden ${open ? 'translate-x-0' : 'translate-x-[100%]'}`}
 			>
 				<li>
 					<button
