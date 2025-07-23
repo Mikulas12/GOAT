@@ -13,6 +13,15 @@
 	function onLinkClick() {
 		open = false;
 	}
+
+	// Bonus: zablokování scrollování při otevřeném menu
+	$: {
+		if (open) {
+			document.body.style.overflow = 'hidden';
+		} else {
+			document.body.style.overflow = '';
+		}
+	}
 </script>
 
 <header class="top-0 z-50 mx-auto max-w-7xl md:sticky md:top-4 relative">
@@ -36,9 +45,10 @@
 					<IconMenu />
 				</button>
 			</div>
+
 			<!-- Mobile Nav -->
 			<ul
-				class={`fixed inset-0 z-50 flex flex-col items-end gap-4 bg-white pr-4 pt-14 transition-transform duration-300 ease-in-out md:hidden ${open ? 'translate-x-0' : 'translate-x-[100%]'}`}
+				class={`fixed inset-0 z-[9999] flex flex-col items-end gap-4 bg-white pr-4 pt-14 shadow-xl transition-transform duration-300 ease-in-out md:hidden ${open ? 'translate-x-0' : 'translate-x-[100%]'}`}
 			>
 				<li>
 					<button
