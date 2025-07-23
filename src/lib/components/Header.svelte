@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import { type Content, isFilled } from '@prismicio/client';
 	import NavBarLink from './NavBarLink.svelte';
 	import Button from './Button.svelte';
@@ -14,15 +15,18 @@
 		open = false;
 	}
 
-	// Bonus: zablokování scrollování při otevřeném menu
-	$: {
-		if (open) {
-			document.body.style.overflow = 'hidden';
-		} else {
-			document.body.style.overflow = '';
+	// ✅ Bezpečně blokuj scroll při otevřeném menu (jen v prohlížeči)
+	onMount(() => {
+		$: {
+			if (open) {
+				document.body.style.overflow = 'hidden';
+			} else {
+				document.body.style.overflow = '';
+			}
 		}
-	}
+	});
 </script>
+
 
 <header class="top-0 z-50 mx-auto max-w-7xl md:sticky md:top-4 relative">
 	<nav>
