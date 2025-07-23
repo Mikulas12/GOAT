@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { type Content, isFilled } from '@prismicio/client';
 	import { PrismicLink } from '@prismicio/svelte';
-	import IconGithub from '~icons/fa-brands/github';
 	import IconLinkedin from '~icons/fa-brands/linkedin';
-	import IconTwitter from '~icons/simple-icons/x';
+	import IconFacebook from '~icons/fa-brands/facebook';
+	import IconInstagram from '~icons/fa-brands/instagram';
 	import Bounded from './Bounded.svelte';
 
 	export let settings: Content.SettingsDocument;
@@ -50,13 +50,13 @@
 			</ul>
 		</nav>
 		<div class="socials inline-flex justify-center sm:justify-end">
-			{#if isFilled.link(settings.data.github_link)}
+			{#if isFilled.link(settings.data.facebook_link)}
 				<PrismicLink
-					field={settings.data.github_link}
+					field={settings.data.facebook_link}
 					class="p-2 text-2xl text-slate-700 transform transition-all duration-150 hover:scale-125 hover:text-yellow-500"
-					aria-label={settings.data.name + ' on Github'}
+					aria-label={settings.data.name + ' on Facebook'}
 				>
-					<IconGithub />
+					<IconFacebook />
 				</PrismicLink>
 			{/if}
 			{#if isFilled.link(settings.data.linkedin_link)}
@@ -68,13 +68,13 @@
 					<IconLinkedin />
 				</PrismicLink>
 			{/if}
-			{#if isFilled.link(settings.data.twitter_link)}
+			{#if isFilled.link(settings.data.instagram_link)}
 				<PrismicLink
-					field={settings.data.twitter_link}
+					field={settings.data.instagram_link}
 					class="p-2 text-2xl text-slate-700 transform transition-all duration-150 hover:scale-125 hover:text-yellow-500"
-					aria-label={settings.data.name + ' on Twitter'}
+					aria-label={settings.data.name + ' on Instagram'}
 				>
-					<IconTwitter />
+					<IconInstagram />
 				</PrismicLink>
 			{/if}
 		</div>

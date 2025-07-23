@@ -352,15 +352,15 @@ interface SettingsDocumentData {
 	cta_label: prismic.KeyTextField;
 
 	/**
-	 * Github Link field in *Settings*
+	 * Instagram Link field in *Settings*
 	 *
 	 * - **Field Type**: Link
 	 * - **Placeholder**: *None*
-	 * - **API ID Path**: settings.github_link
+	 * - **API ID Path**: settings.instagram_link
 	 * - **Tab**: Main
 	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
 	 */
-	github_link: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
+	instagram_link: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
 
 	/**
 	 * Linkedin Link field in *Settings*
@@ -374,15 +374,15 @@ interface SettingsDocumentData {
 	linkedin_link: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
 
 	/**
-	 * Twitter Link field in *Settings*
+	 * Facebook Link field in *Settings*
 	 *
 	 * - **Field Type**: Link
 	 * - **Placeholder**: *None*
-	 * - **API ID Path**: settings.twitter_link
+	 * - **API ID Path**: settings.facebook_link
 	 * - **Tab**: Main
 	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
 	 */
-	twitter_link: prismic.LinkField<string, string, unknown, prismic.FieldState, never> /**
+	facebook_link: prismic.LinkField<string, string, unknown, prismic.FieldState, never> /**
 	 * Meta Title field in *Settings*
 	 *
 	 * - **Field Type**: Text

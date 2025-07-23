@@ -52,10 +52,10 @@
 					"placeholder": ""
 				}
 			},
-			"github_link": {
+			"instagram_link": {
 				"type": "Link",
 				"config": {
-					"label": "Github Link",
+					"label": "Instagram Link",
 					"placeholder": "",
 					"allowTargetBlank": false,
 					"select": null
@@ -69,10 +69,10 @@
 					"select": null
 				}
 			},
-			"twitter_link": {
+			"facebook_link": {
 				"type": "Link",
 				"config": {
-					"label": "Twitter Link",
+					"label": "Facebook Link",
 					"placeholder": "",
 					"select": null
 				}
