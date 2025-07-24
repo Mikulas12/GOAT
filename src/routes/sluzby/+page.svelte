@@ -12,24 +12,24 @@
 
   const services: Service[] = [
     {
-      title: 'Virtuální realita',
-      description: 'Interaktivní 3D prohlídky interiérů ve vašem prohlížeči.',
+      title: 'VR aplikace & customizace designu',
+      description: 'Plně brandovaná VR aplikace s procházkou a úpravou vzhledu prostoru.',
       fullDescription:
-        'Naše VR zážitky umožňují plné ponoření do prostoru: podpora kontrolerů, interaktivní prvky a možnost brandingu.',
+        'Navrhneme a vyvineme aplikaci pro VR headsety s podporou ovladačů, teleportu, mapy a hotspotů. Uživatelé mohou za běhu měnit barvy, materiály a layout – ideální pro prezentaci návrhů i finálních podob.',
       icon: '/vr.jpg'
     },
     {
-      title: '360° Panorama',
-      description: 'Plně sférické panoramatické záběry pro dokonalý pohled.',
+      title: 'Fotografie, video & letecké záběry dronem',
+      description: 'Profesionální interiérové i exteriérové snímky, video a letecké záběry dronem pro nemovitosti.',
       fullDescription:
-        '360° panoramata generujeme z fotografií nebo 3D modelů, s podporou hotspotů a textových popisků.',
-      icon: '/360.jpg'
+        'Zachytíme každý kout vaší nemovitosti – od ostrých fotek interiéru i exteriéru, přes dynamické propagační video až po letecké záběry dronem okolí a střechy. Ideální pro realitní weby, marketingová videa a prezentace klientům.',
+      icon: '/23.jpg'
     },
     {
-      title: 'Procházkový režim',
-      description: 'Volné pohybování ve virtuálních prostorech s intuitivním ovládáním.',
+      title: '3D scan & interaktivní prohlídka',
+      description: 'Realistický 3D scan interiérů i exteriérů s webovým procházením.',
       fullDescription:
-        'Navrhneme trasu, optimalizujeme kolize, přidáme navigační UI, mapu a režim „teleportu“ pro VR headsety.',
+        'Zachytíme vaše prostory (LiDAR, fotogrammetrie nebo přesné 3D modely) a na webu umožníme volné procházení, vhodné pro zobrazení nemovitosti až do krajních detailů',
       icon: '/1.png'
     },
     {
