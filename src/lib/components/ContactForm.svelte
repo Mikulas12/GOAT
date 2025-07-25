@@ -5,7 +5,7 @@
   const IS_DEV = import.meta.env.DEV;
 
   // 2) Načteme site key z .env (prefix VITE_)
-  const SITE_KEY = import.meta.env.VITE_RECAPTCHA_SITE_KEY as string;
+  const SITE_KEY = import.meta.env.PUBLIC_RECAPTCHA_SITE_KEY as string;
 
   let name = '';
   let email = '';
