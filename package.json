@@ -1,6 +1,6 @@
 {
   "engines": {
-    "node": ">=18 <19"
+    "node": ">=18"
   },
   "name": "sveltekit-starter-prismic-minimal",
   "version": "0.0.1",
@@ -60,6 +60,7 @@
     "clsx": "^2.1.1",
     "gsap": "^3.12.5",
     "nodemailer": "^7.0.3",
+    "resend": "^4.7.0",
     "three": "^0.165.0",
     "zod": "^3.25.67"
   }
