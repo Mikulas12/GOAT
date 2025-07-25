@@ -1,11 +1,12 @@
 <script lang="ts">
   import { onMount } from 'svelte';
+  import { PUBLIC_RECAPTCHA_SITE_KEY } from '$env/static/public';
 
   // 0) Rozlišení developmentu
   const IS_DEV = import.meta.env.DEV;
 
   // 2) Načteme site key z .env (prefix VITE_)
-  const SITE_KEY = import.meta.env.PUBLIC_RECAPTCHA_SITE_KEY as string;
+  const SITE_KEY = PUBLIC_RECAPTCHA_SITE_KEY;
 
   let name = '';
   let email = '';
