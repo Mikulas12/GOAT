@@ -1,0 +1,219 @@
+{
+	"version": 3,
+	"routes": [
+		{
+			"src": "/slice-simulator",
+			"dest": "/slice-simulator/"
+		},
+		{
+			"src": "/slice-simulator/",
+			"status": 308,
+			"headers": {
+				"Location": "/slice-simulator"
+			}
+		},
+		{
+			"src": "/sluzby",
+			"dest": "/sluzby/"
+		},
+		{
+			"src": "/sluzby/",
+			"status": 308,
+			"headers": {
+				"Location": "/sluzby"
+			}
+		},
+		{
+			"src": "/blog/navrh-obchodu",
+			"dest": "/blog/navrh-obchodu/"
+		},
+		{
+			"src": "/blog/navrh-obchodu/",
+			"status": 308,
+			"headers": {
+				"Location": "/blog/navrh-obchodu"
+			}
+		},
+		{
+			"src": "/blog/navrh-bytu-pro-par",
+			"dest": "/blog/navrh-bytu-pro-par/"
+		},
+		{
+			"src": "/blog/navrh-bytu-pro-par/",
+			"status": 308,
+			"headers": {
+				"Location": "/blog/navrh-bytu-pro-par"
+			}
+		},
+		{
+			"src": "/blog/navrh-interieru-pro-instituci-kivvi",
+			"dest": "/blog/navrh-interieru-pro-instituci-kivvi/"
+		},
+		{
+			"src": "/blog/navrh-interieru-pro-instituci-kivvi/",
+			"status": 308,
+			"headers": {
+				"Location": "/blog/navrh-interieru-pro-instituci-kivvi"
+			}
+		},
+		{
+			"src": "/blog/vr-interier",
+			"dest": "/blog/vr-interier/"
+		},
+		{
+			"src": "/blog/vr-interier/",
+			"status": 308,
+			"headers": {
+				"Location": "/blog/vr-interier"
+			}
+		},
+		{
+			"src": "/blog/pasport-stavby",
+			"dest": "/blog/pasport-stavby/"
+		},
+		{
+			"src": "/blog/pasport-stavby/",
+			"status": 308,
+			"headers": {
+				"Location": "/blog/pasport-stavby"
+			}
+		},
+		{
+			"src": "/blog/stare-projekty",
+			"dest": "/blog/stare-projekty/"
+		},
+		{
+			"src": "/blog/stare-projekty/",
+			"status": 308,
+			"headers": {
+				"Location": "/blog/stare-projekty"
+			}
+		},
+		{
+			"src": "/blog/navrh-jidelniho-stolu",
+			"dest": "/blog/navrh-jidelniho-stolu/"
+		},
+		{
+			"src": "/blog/navrh-jidelniho-stolu/",
+			"status": 308,
+			"headers": {
+				"Location": "/blog/navrh-jidelniho-stolu"
+			}
+		},
+		{
+			"src": "/o-mne",
+			"dest": "/o-mne/"
+		},
+		{
+			"src": "/o-mne/",
+			"status": 308,
+			"headers": {
+				"Location": "/o-mne"
+			}
+		},
+		{
+			"src": "/projekty",
+			"dest": "/projekty/"
+		},
+		{
+			"src": "/projekty/",
+			"status": 308,
+			"headers": {
+				"Location": "/projekty"
+			}
+		},
+		{
+			"src": "/home",
+			"dest": "/home/"
+		},
+		{
+			"src": "/home/",
+			"status": 308,
+			"headers": {
+				"Location": "/home"
+			}
+		},
+		{
+			"src": "/_app/immutable/.+",
+			"headers": {
+				"cache-control": "public, immutable, max-age=31536000"
+			}
+		},
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "^/api/contact/?(?:/__data.json)?$",
+			"dest": "/api/contact"
+		},
+		{
+			"src": "^/api/preview/?(?:/__data.json)?$",
+			"dest": "/api/preview"
+		},
+		{
+			"src": "^(/[^/]+)?/blog/([^/]+?)/?(?:/__data.json)?$",
+			"dest": "/[[preview=preview]]/blog/[uid]"
+		},
+		{
+			"src": "^/contact/?(?:/__data.json)?$",
+			"dest": "/contact"
+		},
+		{
+			"src": "^(/[^/]+)?/project/([^/]+?)/?(?:/__data.json)?$",
+			"dest": "/[[preview=preview]]/project/[uid]"
+		},
+		{
+			"src": "^(/[^/]+)?/?(?:/__data.json)?$",
+			"dest": "/[[preview=preview]]"
+		},
+		{
+			"src": "^(/[^/]+)?/([^/]+?)/?(?:/__data.json)?$",
+			"dest": "/[[preview=preview]]/[uid]"
+		},
+		{
+			"src": "/.*",
+			"dest": "/![-]/catchall"
+		}
+	],
+	"overrides": {
+		"slice-simulator.html": {
+			"path": "slice-simulator"
+		},
+		"sluzby.html": {
+			"path": "sluzby"
+		},
+		"index.html": {
+			"path": ""
+		},
+		"blog/navrh-obchodu.html": {
+			"path": "blog/navrh-obchodu"
+		},
+		"blog/navrh-bytu-pro-par.html": {
+			"path": "blog/navrh-bytu-pro-par"
+		},
+		"blog/navrh-interieru-pro-instituci-kivvi.html": {
+			"path": "blog/navrh-interieru-pro-instituci-kivvi"
+		},
+		"blog/vr-interier.html": {
+			"path": "blog/vr-interier"
+		},
+		"blog/pasport-stavby.html": {
+			"path": "blog/pasport-stavby"
+		},
+		"blog/stare-projekty.html": {
+			"path": "blog/stare-projekty"
+		},
+		"blog/navrh-jidelniho-stolu.html": {
+			"path": "blog/navrh-jidelniho-stolu"
+		},
+		"o-mne.html": {
+			"path": "o-mne"
+		},
+		"projekty.html": {
+			"path": "projekty"
+		},
+		"home.html": {
+			"path": "home"
+		}
+	}
+}
