@@ -2,6 +2,7 @@
 <script lang="ts">
   import IconArrow from '~icons/ic/baseline-arrow-outward';
   import { fade } from 'svelte/transition';
+import LazyImage from '$lib/components/LazyImage.svelte';
 
   interface Service {
     title: string;
@@ -77,12 +78,14 @@
           class="service-card flex flex-col items-start bg-white rounded-2xl p-6 shadow-md
                  transform transition-transform hover:-translate-y-1"
         >
-          <!-- Ikona -->
+          <!-- Ikona (lazy‑load) -->
           <div class="w-16 h-16 mb-4">
-            <img
+            <LazyImage
               src={svc.icon}
-              alt="{svc.title} ikona"
-              class="w-full h-full object-contain"
+              alt={`${svc.title} ikona`}
+              width={64}
+              height={64}
+              className="w-full h-full object-contain"
             />
           </div>
 
@@ -116,6 +119,7 @@
     </div>
   </div>
 </section>
+
 
 
 
