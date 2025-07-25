@@ -25,7 +25,7 @@
 		</div>
 		<p class="mt-8 border-b border-slate-600 text-xl font-medium text-slate-600">{formattedDate}</p>
 
-		<div class="prose prose-lg mt-12 w-full max-w-none md:mt-20">
+		<div class="text-sm sm:text-base md:text-lg leading-relaxed mt-12 w-full max-w-none md:mt-20"></div>
 			<SliceZone slices={page.data.slices} {components} />
 		</div>
 	</div>
