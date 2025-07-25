@@ -1,8 +1,8 @@
-<!-- Services.svelte -->
+<!-- src/routes/sluzby/+page.svelte -->
 <script lang="ts">
   import IconArrow from '~icons/ic/baseline-arrow-outward';
   import { fade } from 'svelte/transition';
-import LazyImage from '$lib/components/LazyImage.svelte';
+  import LazyImage from '$lib/components/LazyImage.svelte';
 
   interface Service {
     title: string;
@@ -66,6 +66,19 @@ import LazyImage from '$lib/components/LazyImage.svelte';
   }
 </script>
 
+<svelte:head>
+  <title>Služby – Mikuláš Merhulík</title>
+  <meta
+    name="description"
+    content="Objevte kompletní nabídku služeb: VR aplikace, 3D scan, profesionální foto a video, dron, 3D modelování, branding a vývoj webů a aplikací."
+  />
+  <meta
+    property="og:description"
+    content="Objevte kompletní nabídku služeb: VR aplikace, 3D scan, profesionální foto a video, dron, 3D modelování, branding a vývoj webů a aplikací."
+  />
+  <meta property="og:title" content="Služby – Mikuláš Merhulík" />
+</svelte:head>
+
 <section id="services" class="pt-32 pb-16 bg-slate-50">
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="text-4xl font-semibold text-slate-900 mb-12 text-center">
@@ -111,7 +124,7 @@ import LazyImage from '$lib/components/LazyImage.svelte';
             on:click={() => toggle(i)}
             class="mt-auto inline-flex items-center gap-1 text-yellow-500 font-bold hover:underline"
           >
-            {expandedIndex === i ? 'Zobrazit méně' : 'Načíst více'} 
+            {expandedIndex === i ? 'Zobrazit méně' : 'Načíst více'}
             <IconArrow />
           </button>
         </div>
