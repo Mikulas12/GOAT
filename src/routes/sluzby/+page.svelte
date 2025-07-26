@@ -2,7 +2,6 @@
 <script lang="ts">
   import IconArrow from '~icons/ic/baseline-arrow-outward';
   import { fade } from 'svelte/transition';
-  import LazyImage from '$lib/components/LazyImage.svelte';
 
   interface Service {
     title: string;
@@ -79,7 +78,7 @@
   <meta property="og:title" content="Služby – Mikuláš Merhulík" />
 </svelte:head>
 
-<section id="services" class="pt-32 pb-16 bg-slate-50">
+<section id="services" class="pt-20 pb-20 bg-slate-50">
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="text-4xl font-semibold text-slate-900 mb-12 text-center">
       Služby které nabízím
@@ -91,14 +90,14 @@
           class="service-card flex flex-col items-start bg-white rounded-2xl p-6 shadow-md
                  transform transition-transform hover:-translate-y-1"
         >
-          <!-- Ikona (lazy‑load) -->
-          <div class="w-16 h-16 mb-4">
-            <LazyImage
+          <!-- Ikona služby s minimálními mezerami -->
+          <div class="w-16 h-16 mt-0.5 mb-2">
+            <img
               src={svc.icon}
               alt={`${svc.title} ikona`}
-              width={64}
-              height={64}
-              className="w-full h-full object-contain"
+              width="64"
+              height="64"
+              class="w-full h-full object-contain"
             />
           </div>
 
@@ -132,6 +131,10 @@
     </div>
   </div>
 </section>
+
+
+
+
 
 
 
