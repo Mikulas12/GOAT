@@ -4,7 +4,6 @@
 
   import { onMount } from 'svelte';
   import { browser } from '$app/environment';
-  import { injectAnalytics } from '@vercel/analytics';
 
   import { PrismicPreview } from '@prismicio/svelte/kit';
   import { page } from '$app/stores';
@@ -16,7 +15,7 @@
 
   onMount(() => {
     if (browser) {
-      injectAnalytics();
+      
     }
   });
 </script>
