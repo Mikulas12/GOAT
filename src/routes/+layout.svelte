@@ -15,7 +15,7 @@
 
   onMount(() => {
     if (browser) {
-      // injectAnalytics(); // ❌ neexistuje → smaženo
+      
     }
   });
 </script>
